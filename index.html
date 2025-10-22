@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calcBase">
+        <div class="outputField">
+            <p id="out0"></p><p id="outC"></p><p id="out1"></p><p id="errOut"></p>
+        </div>
+        <div class="keypad">
+            <button type="button" onclick="input(1);">1</button> 
+            <button type="button" onclick="input(2);">2</button> 
+            <button type="button" onclick="input(3);">3</button> 
+            <button type="button" onclick="operant('+');">+</button> 
+            <button type="button" onclick="operant('-');">-</button> 
+            <button type="button" onclick="operant('*');">*</button> 
+            <button type="button" onclick="operant('/');">/</button>
+            <button type="button" onclick="operant('^');">^</button>
+            <br>
+            <button type="button" onclick="input(4);">4</button> 
+            <button type="button" onclick="input(5);">5</button> 
+            <button type="button" onclick="input(6);">6</button> 
+            <br>
+            <button type="button" onclick="input(7);">7</button> 
+            <button type="button" onclick="input(8);">8</button> 
+            <button type="button" onclick="input(9);">9</button> 
+            <br>
+            <button type="button" onclick="calc();">=</button>
+            <button type="button" id="null" onclick="input(0);">0</button> 
+            <button type="button" onclick="erase();">Clr</button>
+            <button type="button" onclick="input('answer');">Ans</button>
+        </div>
+    </div>
+    <div class="variablesBase">
+        <div class="varGroup">
+            <p>A</p> <button type="button" onclick="">Load</button> <button type="button" onclick="">Save</button> <button type="button" onclick="">Reset</button> 
+            <p>B</p> <button type="button" onclick="">Load</button> <button type="button" onclick="">Save</button> <button type="button" onclick="">Reset</button> 
+            <p>C</p> <button type="button" onclick="">Load</button> <button type="button" onclick="">Save</button> <button type="button" onclick="">Reset</button> 
+        </div>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+</html>
